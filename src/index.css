@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 210 40% 3.9%;
+    --card: 210 40% 100%;
+    --card-foreground: 210 40% 3.9%;
+    --popover: 210 40% 100%;
+    --popover-foreground: 210 40% 3.9%;
+    --primary: 199 89% 37%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 90%;
+    --secondary-foreground: 210 40% 3.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 210 40% 45%;
+    --accent: 210 40% 93%;
+    --accent-foreground: 210 40% 3.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 40% 90%;
+    --input: 210 40% 90%;
+    --ring: 199 89% 37%;
+    --chart-1: 199 89% 37%;
+    --chart-2: 186 67% 46%;
+    --chart-3: 198 56% 55%;
+    --chart-4: 197 41% 65%;
+    --chart-5: 196 31% 75%;
+    --radius: 0.5rem;
+    --trust: 186 67% 46%;
+    --warm: 24 100% 50%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 210 40% 3.9%;
+    --sidebar-primary: 199 89% 37%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 93%;
+    --sidebar-accent-foreground: 210 40% 3.9%;
+    --sidebar-border: 210 40% 90%;
+    --sidebar-ring: 199 89% 37%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--trust)) 100%);
+    --gradient-card: linear-gradient(to right, hsl(var(--muted)) 0%, hsl(var(--background)) 100%);
+    
+    /* Shadows */
+    --shadow-elevated: 0 10px 40px hsla(199, 89%, 37%, 0.15);
+    --shadow-hover: 0 20px 60px hsla(199, 89%, 37%, 0.25);
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 28% 17%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 28% 17%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 203 94% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 25% 27%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 183 45% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 199 89% 48%;
+    
+    --trust: 142 71% 45%;
+    --trust-foreground: 0 0% 100%;
+    
+    --warm: 18 80% 44%;
+    --warm-foreground: 0 0% 100%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  @keyframes gradient-x {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 15s ease infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s infinite;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+}

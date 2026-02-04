@@ -1,0 +1,22 @@
+import PageHero from "@/components/layout/PageHero";
+import { AnimatedSection } from "@/components/AnimatedSection";
+
+const Blog = () => {
+  return (
+    <div className="w-full">
+      <PageHero
+        title="Blog Interdental"
+        subtitle="Dicas, novidades e conteúdo sobre saúde bucal"
+      />
+      <AnimatedSection animation="fade-in-up">
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-muted-foreground">Conteúdo em breve</p>
+          </div>
+        </section>
+      </AnimatedSection>
+    </div>
+  );
+};
+
+export default Blog;

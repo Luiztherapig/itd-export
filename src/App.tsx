@@ -59,6 +59,7 @@ const App = () => (
                 <Route path="/contrate" element={<Checkout />} />
                 <Route path="/contato" element={<Contact />} />
                 <Route path="/transparencia" element={<Transparency />} />
+                <Route path="/transparencia/idss" element={<Idss />} />
                 <Route path="/credenciamento" element={<CredentialForm />} />
                 <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
                 <Route path="/termos-de-uso" element={<TermsOfUse />} />

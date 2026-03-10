@@ -25,6 +25,7 @@ const Careers = lazy(() => import("./pages/Careers"));
 const Checkout = lazy(() => import("./pages/Checkout"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Transparency = lazy(() => import("./pages/Transparency"));
+const Idss = lazy(() => import("./pages/Idss"));
 const CredentialForm = lazy(() => import("./pages/CredentialForm"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfUse = lazy(() => import("./pages/TermsOfUse"));

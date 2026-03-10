@@ -7,7 +7,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 
 const Transparency = () => {
   const documents = [
-    { icon: Shield, title: "IDSS da operadora 2025 (Ano-base 2024)", description: "Registro ANS nº 314757", link: "https://www.ans.gov.br/qualificacao_consumidor/informacoes_operadora.asp?co_operadora_param=314757&cd_processamento_param=20250102#consulta_idss" },
+    { icon: Shield, title: "IDSS da operadora 2025 (Ano-base 2024)", description: "Registro ANS nº 314757", link: "/transparencia/idss" },
     { icon: FileText, title: "Termos de Uso", description: "Leia os termos de uso do serviço", link: "#" },
     { icon: Lock, title: "Política de Privacidade", description: "Como tratamos seus dados", link: "#" },
     { icon: Award, title: "Código de Ética", description: "Nossos compromissos", link: "#" }

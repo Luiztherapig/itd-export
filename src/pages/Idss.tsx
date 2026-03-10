@@ -17,6 +17,7 @@ const Idss = () => {
                 <p><strong>Operadora:</strong> Centro Odontologico Integrado Ltda</p>
                 <p><strong>Nome fantasia:</strong> Interdental</p>
                 <p><strong>Registro ANS:</strong> 314757</p>
+                <p><strong>Ano de referência:</strong> 2024</p>
                 <p><strong>Atualizado em:</strong> 10/03/2026</p>
               </div>
 
